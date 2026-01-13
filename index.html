@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busi Vijay Daniel | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <h1>Portfolio</h1>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- Home Section -->
+<section id="home" class="section home">
+    <h2>👋 Hello, I'm</h2>
+    <h1>Busi Vijay Daniel</h1>
+    <p>
+        A self-motivated Computer Science Engineering student who loves 
+        mining data, crafting dashboards, and building analytical solutions.
+    </p>
+    <button onclick="scrollToSection('projects')">View My Creations ⛏️</button>
+</section>
+
+<!-- Skills -->
+<section id="skills" class="section">
+    <h2>🧰 My Skill Inventory</h2>
+
+    <div class="grid">
+        <div class="card">SQL</div>
+        <div class="card">Python (NumPy, Pandas)</div>
+        <div class="card">Power BI</div>
+        <div class="card">Tableau</div>
+        <div class="card">Team Player</div>
+        <div class="card">Self-Motivated</div>
+        <div class="card">Flexible</div>
+    </div>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="section">
+    <h2>⛏️ Featured Project</h2>
+
+    <div class="project-card">
+        <h3>Customer Shopping Behaviour Analysis</h3>
+        <p>
+           <li> Cleaned and standardized customer shopping data. </li>
+           <li> Engineered new features like <b>age_group</b> and <b>purchase_frequency</b>.</li>
+            <li>Performed EDA using Python to identify trends in purchasing behavior.</li>
+            <li>Loaded data into PostgreSQL and built an interactive Power BI dashboard.</li>
+        </p>
+
+        <img src="dashboard.png" alt="Customer Behaviour Dashboard">
+    </div>
+</section>
+
+<!-- Certifications -->
+<section id="certifications" class="section">
+    <h2>🏆 Certifications</h2>
+
+    <div class="card">
+        <h3>Deloitte Australia – Data Analytics Job Simulation</h3>
+        <p>August 2025</p>
+        <ul>
+            <li>Completed data analysis & forensic technology simulation</li>
+            <li>Created a data dashboard using Tableau</li>
+            <li>Used Excel to classify data and draw business conclusions</li>
+        </ul>
+    </div>
+</section>
+
+<!-- Education -->
+<section class="section">
+    <h2>📚 Education</h2>
+
+    <div class="card">
+        <p><b>Bachelor of Technology (CSE)</b><br>
+        Vignan Institution of Technology and Science<br>
+        CGPA: 6.69</p>
+
+        <p><b>Higher Secondary</b><br>
+        Sri Chaitanya Junior Kalasa<br>
+        CGPA: 7.51</p>
+
+        <p><b>Secondary High School</b><br>
+        Lotus Lap Public School<br>
+        CGPA: 10.0</p>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="section contact">
+    <h2>📩 Send Me a Message</h2>
+
+    <form 
+      action="https://formspree.io/f/mreegrzo"
+      method="POST"
+      class="contact-form"
+    >
+
+        <input type="text" name="name" placeholder="Your Name" required>
+
+        <input type="email" name="email" placeholder="Your Email" required>
+
+        <textarea name="message" placeholder="Your Message / Review" required></textarea>
+
+        <button type="submit">Send Message 📬</button>
+    </form>
+</section>
+
+<footer>
+    <p>🟩 Crafted by Busi Vijay Daniel | Portfolio</p>
+</footer>
+<form 
+  action="https://formspree.io/f/mreegrzo"
+  method="POST"
+  class="contact-form"
+>
+  <input type="hidden" name="_next" value="thankyou.html">
+</form>
+<script src="script.js"></script>
+</body>
+</html>
