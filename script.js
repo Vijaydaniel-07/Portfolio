@@ -1,38 +1,35 @@
-// Smooth scroll (already used before)
-function scrollToSection(id) {
-    document.getElementById(id).scrollIntoView({ behavior: "smooth" });
-}
+document.addEventListener("DOMContentLoaded", function () {
 
+    const elements = document.querySelectorAll(
+        ".project-card, .skill-card, .experience-item, .education-card, .publication-card"
+    );
 
-// Handle Contact Form Submission
-const form = document.querySelector(".contact-form");
-const statusText = document.createElement("p");
-form.appendChild(statusText);
+    const observer = new IntersectionObserver(
+        function (entries) {
 
-form.addEventListener("submit", async function (event) {
-    event.preventDefault(); // Stop normal form submission
+            entries.forEach(function (entry) {
 
-    const formData = new FormData(form);
+                if (entry.isIntersecting) {
 
-    try {
-        const response = await fetch(form.action, {
-            method: form.method,
-            body: formData,
-            headers: {
-                'Accept': 'application/json'
-            }
-        });
+                    entry.target.classList.add("show");
 
-        if (response.ok) {
-            statusText.innerText = "✅ Message Sent Successfully to Vijay's Inbox!";
-            statusText.style.color = "#00ff00";
-            form.reset();
-        } else {
-            statusText.innerText = "❌ Oops! Something went wrong.";
-            statusText.style.color = "#ff0000";
+                }
+
+            });
+
+        },
+        {
+            threshold: 0.1
         }
-    } catch (error) {
-        statusText.innerText = "❌ Network Error. Try again later.";
-        statusText.style.color = "#ff0000";
-    }
+    );
+
+
+    elements.forEach(function (element) {
+
+        element.classList.add("animate");
+
+        observer.observe(element);
+
+    });
+
 });
