@@ -1,133 +1,730 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Busi Vijay Daniel | Portfolio</title>
+
+    <meta name="description"
+        content="Portfolio of Busi Vijay Daniel - Entry-Level Analyst specializing in Python, SQL, Power BI, Tableau and Data Analytics.">
+
+    <title>Busi Vijay Daniel | Analyst</title>
+
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-<!-- Navbar -->
-<nav class="navbar">
-    <h1>Portfolio</h1>
-    <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#certifications">Certifications</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
+    <!-- ================= NAVBAR ================= -->
 
-<!-- Home Section -->
-<section id="home" class="section home">
-    <h2>👋 Hello, I'm</h2>
-    <h1>Busi Vijay Daniel</h1>
-    <p>
-        A self-motivated Computer Science Engineering student who loves 
-        mining data, crafting dashboards, and building analytical solutions.
-    </p>
-    <button onclick="scrollToSection('projects')">View My Creations ⛏️</button>
-</section>
+    <header class="navbar">
 
-<!-- Skills -->
-<section id="skills" class="section">
-    <h2>🧰 My Skill Inventory</h2>
+        <div class="container nav-container">
 
-    <div class="grid">
-        <div class="card">SQL</div>
-        <div class="card">Python (NumPy, Pandas)</div>
-        <div class="card">Power BI</div>
-        <div class="card">Tableau</div>
-        <div class="card">Team Player</div>
-        <div class="card">Self-Motivated</div>
-        <div class="card">Flexible</div>
-    </div>
-</section>
+            <a href="#home" class="logo">
+                Vijay Daniel
+            </a>
 
-<!-- Projects -->
-<section id="projects" class="section">
-    <h2>⛏️ Featured Project</h2>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="#education">Education</a>
+                <a href="#contact">Contact</a>
+            </nav>
 
-    <div class="project-card">
-        <h3>Customer Shopping Behaviour Analysis</h3>
-        <p>
-           <li> Cleaned and standardized customer shopping data. </li>
-           <li> Engineered new features like <b>age_group</b> and <b>purchase_frequency</b>.</li>
-            <li>Performed EDA using Python to identify trends in purchasing behavior.</li>
-            <li>Loaded data into PostgreSQL and built an interactive Power BI dashboard.</li>
-        </p>
+        </div>
 
-        <img src="dashboard.png" alt="Customer Behaviour Dashboard">
-    </div>
-</section>
+    </header>
 
-<!-- Certifications -->
-<section id="certifications" class="section">
-    <h2>🏆 Certifications</h2>
 
-    <div class="card">
-        <h3>Deloitte Australia – Data Analytics Job Simulation</h3>
-        <p>August 2025</p>
-        <ul>
-            <li>Completed data analysis & forensic technology simulation</li>
-            <li>Created a data dashboard using Tableau</li>
-            <li>Used Excel to classify data and draw business conclusions</li>
-        </ul>
-    </div>
-</section>
+    <!-- ================= HERO ================= -->
 
-<!-- Education -->
-<section class="section">
-    <h2>📚 Education</h2>
+    <section id="home" class="hero">
 
-    <div class="card">
-        <p><b>Bachelor of Technology (CSE)</b><br>
-        Vignan Institution of Technology and Science<br>
-        CGPA: 6.69</p>
+        <div class="container hero-container">
 
-        <p><b>Higher Secondary</b><br>
-        Sri Chaitanya Junior Kalasa<br>
-        CGPA: 7.51</p>
+            <div class="hero-text">
 
-        <p><b>Secondary High School</b><br>
-        Lotus Lap Public School<br>
-        CGPA: 10.0</p>
-    </div>
-</section>
+                <p class="eyebrow">
+                    ENTRY-LEVEL ANALYST
+                </p>
 
-<!-- Contact Section -->
-<section id="contact" class="section contact">
-    <h2>📩 Send Me a Message</h2>
+                <h1>
+                    Busi Vijay<br>
+                    Daniel
+                </h1>
 
-    <form 
-      action="https://formspree.io/f/mreegrzo"
-      method="POST"
-      class="contact-form"
-    >
+                <h2>
+                    Data • Business Intelligence • Visualization
+                </h2>
 
-        <input type="text" name="name" placeholder="Your Name" required>
+                <p class="hero-description">
 
-        <input type="email" name="email" placeholder="Your Email" required>
+                    Computer Science Engineering graduate with hands-on
+                    experience in data cleaning, exploratory data analysis,
+                    SQL querying and dashboard development.
 
-        <textarea name="message" placeholder="Your Message / Review" required></textarea>
+                </p>
 
-        <button type="submit">Send Message 📬</button>
-    </form>
-</section>
+                <div class="buttons">
 
-<footer>
-    <p>🟩 Crafted by Busi Vijay Daniel | Portfolio</p>
-</footer>
-<form 
-  action="https://formspree.io/f/mreegrzo"
-  method="POST"
-  class="contact-form"
->
-  <input type="hidden" name="_next" value="thankyou.html">
-</form>
-<script src="script.js"></script>
+                    <a href="#projects" class="btn btn-dark">
+                        View My Work
+                    </a>
+
+                    <a href="BUSI_VIJAY_DANIEL_Resume_Updated.pdf"
+                       class="btn btn-outline"
+                       download>
+                        Download Resume
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROFILE IMAGE -->
+
+            <div class="hero-image">
+
+                <!--
+                    YOUR PROFILE IMAGE GOES HERE.
+
+                    Replace:
+                    images/profile.jpg
+
+                    with your actual image filename.
+                -->
+
+                <img src="images/profile.jpg"
+                     alt="Busi Vijay Daniel">
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section id="about" class="section">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span>01</span>
+
+                <h2>About Me</h2>
+
+            </div>
+
+
+            <div class="about-grid">
+
+                <div class="about-text">
+
+                    <p>
+                        I am a Computer Science Engineering graduate from
+                        Vignan Institution of Technology and Science,
+                        Hyderabad.
+                    </p>
+
+                    <p>
+                        I enjoy working with raw data, cleaning and
+                        transforming it, identifying meaningful patterns
+                        and converting insights into interactive dashboards
+                        and business-focused visualizations.
+                    </p>
+
+                    <p>
+                        My interests include Data Analytics, Business
+                        Intelligence, Data Visualization and Machine
+                        Learning.
+                    </p>
+
+                </div>
+
+
+                <div class="about-details">
+
+                    <div>
+                        <span>Degree</span>
+                        <strong>B.Tech CSE</strong>
+                    </div>
+
+                    <div>
+                        <span>Location</span>
+                        <strong>Hyderabad, Telangana</strong>
+                    </div>
+
+                    <div>
+                        <span>Focus</span>
+                        <strong>Analytics & BI</strong>
+                    </div>
+
+                    <div>
+                        <span>Availability</span>
+                        <strong>Open to Opportunities</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SKILLS ================= -->
+
+    <section id="skills" class="section section-light">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span>02</span>
+
+                <h2>Technical Skills</h2>
+
+            </div>
+
+
+            <div class="skills-grid">
+
+
+                <div class="skill-card">
+
+                    <h3>
+                        Programming & Data Analysis
+                    </h3>
+
+                    <div class="tags">
+
+                        <span>Python</span>
+                        <span>SQL</span>
+                        <span>Pandas</span>
+                        <span>Matplotlib</span>
+                        <span>Pydicom</span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="skill-card">
+
+                    <h3>
+                        Data Visualization & BI
+                    </h3>
+
+                    <div class="tags">
+
+                        <span>Power BI</span>
+                        <span>Tableau</span>
+                        <span>Excel</span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="skill-card">
+
+                    <h3>
+                        Databases
+                    </h3>
+
+                    <div class="tags">
+
+                        <span>PostgreSQL</span>
+                        <span>MySQL</span>
+                        <span>MySQL Workbench</span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="skill-card">
+
+                    <h3>
+                        Analytics
+                    </h3>
+
+                    <div class="tags">
+
+                        <span>EDA</span>
+                        <span>Data Cleaning</span>
+                        <span>Data Transformation</span>
+                        <span>Data Validation</span>
+                        <span>Trend Analysis</span>
+                        <span>KPI Analysis</span>
+                        <span>Dashboard Development</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PROJECTS ================= -->
+
+    <section id="projects" class="section">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span>03</span>
+
+                <h2>Projects</h2>
+
+            </div>
+
+
+            <div class="projects-grid">
+
+
+                <!-- PROJECT 1 -->
+
+                <article class="project-card">
+
+                    <div class="project-image">
+
+                        <img src="images/customer-shopping.png"
+                             alt="Customer Shopping Behaviour Dashboard">
+
+                    </div>
+
+                    <div class="project-content">
+
+                        <span class="project-number">
+                            PROJECT 01
+                        </span>
+
+                        <h3>
+                            Customer Shopping Behaviour Analysis
+                        </h3>
+
+                        <p>
+                            Cleaned and standardized customer shopping data
+                            using Python and performed exploratory data
+                            analysis to identify purchasing patterns and
+                            customer trends.
+                        </p>
+
+                        <div class="project-tags">
+
+                            <span>Python</span>
+                            <span>PostgreSQL</span>
+                            <span>Power BI</span>
+
+                        </div>
+
+                        <!-- Replace # with your GitHub repository -->
+
+                        <a href="#"
+                           target="_blank"
+                           class="project-link">
+                            View Project →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PROJECT 2 -->
+
+                <article class="project-card">
+
+                    <div class="project-image">
+
+                        <img src="images/electric-vehicle.png"
+                             alt="Electric Vehicle Analysis Dashboard">
+
+                    </div>
+
+                    <div class="project-content">
+
+                        <span class="project-number">
+                            PROJECT 02
+                        </span>
+
+                        <h3>
+                            Electric Vehicle Analysis
+                        </h3>
+
+                        <p>
+                            Cleaned and explored an electric vehicle dataset
+                            and analyzed price, range, battery and power
+                            metrics across brands and models.
+                        </p>
+
+                        <div class="project-tags">
+
+                            <span>Python</span>
+                            <span>Tableau</span>
+                            <span>EDA</span>
+
+                        </div>
+
+                        <a href="#"
+                           target="_blank"
+                           class="project-link">
+                            View Project →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PROJECT 3 -->
+
+                <article class="project-card">
+
+                    <div class="project-image">
+
+                        <img src="images/netflix.png"
+                             alt="Netflix Analysis Dashboard">
+
+                    </div>
+
+                    <div class="project-content">
+
+                        <span class="project-number">
+                            PROJECT 03
+                        </span>
+
+                        <h3>
+                            Netflix Analysis
+                        </h3>
+
+                        <p>
+                            Cleaned Netflix data, handled missing values,
+                            designed relational tables and connected MySQL
+                            with Power BI to create an interactive dashboard.
+                        </p>
+
+                        <div class="project-tags">
+
+                            <span>Excel</span>
+                            <span>MySQL</span>
+                            <span>Power BI</span>
+
+                        </div>
+
+                        <a href="#"
+                           target="_blank"
+                           class="project-link">
+                            View Project →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PROJECT 4 -->
+
+                <article class="project-card">
+
+                    <div class="project-image">
+
+                        <img src="images/dicom.png"
+                             alt="DICOM Patient Data Project">
+
+                    </div>
+
+                    <div class="project-content">
+
+                        <span class="project-number">
+                            PROJECT 04
+                        </span>
+
+                        <h3>
+                            DICOM Patient Data Project
+                        </h3>
+
+                        <p>
+                            Developed a Python-based approach to hide patient
+                            data within DICOM image metadata while preserving
+                            the DICOM file structure and usability.
+                        </p>
+
+                        <div class="project-tags">
+
+                            <span>Python</span>
+                            <span>Pydicom</span>
+                            <span>DICOM</span>
+
+                        </div>
+
+                        <a href="#"
+                           target="_blank"
+                           class="project-link">
+                            View Project →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= EXPERIENCE ================= -->
+
+    <section id="experience" class="section section-light">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span>04</span>
+
+                <h2>Internship & Job Simulation</h2>
+
+            </div>
+
+
+            <div class="experience-list">
+
+
+                <div class="experience-item">
+
+                    <div class="experience-date">
+                        April 2025
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            AICTE Internship on Artificial Intelligence
+                        </h3>
+
+                        <p>
+                            Built machine learning models for image-based
+                            disease detection using Python and TensorFlow.
+                            Analyzed medical datasets using Pandas and
+                            Matplotlib to support model development.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="experience-item">
+
+                    <div class="experience-date">
+                        August 2025
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Deloitte Australia Data Analytics Job Simulation
+                        </h3>
+
+                        <p>
+                            Created interactive dashboards using Tableau
+                            to communicate data insights and used Excel
+                            for data classification and business analysis.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= EDUCATION ================= -->
+
+    <section id="education" class="section">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span>05</span>
+
+                <h2>Education</h2>
+
+            </div>
+
+
+            <div class="education-card">
+
+                <span>
+                    2022 — 2026
+                </span>
+
+                <h3>
+                    Bachelor of Technology
+                </h3>
+
+                <h4>
+                    Computer Science and Engineering
+                </h4>
+
+                <p>
+                    Vignan Institution of Technology and Science
+                </p>
+
+                <p>
+                    Hyderabad, Telangana
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CERTIFICATION ================= -->
+
+    <section class="section section-light">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span>06</span>
+
+                <h2>Publication</h2>
+
+            </div>
+
+
+            <div class="publication-card">
+
+                <span>
+                    ICICCS 2026
+                </span>
+
+                <h3>
+                    Hiding Patient Data in Medical Images
+                    in DICOM Metadata
+                </h3>
+
+                <p>
+                    Developed a Python-based approach using Pydicom to
+                    read, process and manipulate DICOM metadata while
+                    preserving the DICOM file structure and usability.
+                </p>
+
+                <a href="https://doi.org/10.65890/dmp-lncse.ICICCS26.202"
+                   target="_blank"
+                   class="project-link">
+                    View Publication →
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section id="contact" class="contact">
+
+        <div class="container">
+
+            <p class="eyebrow">
+                GET IN TOUCH
+            </p>
+
+            <h2>
+                Let's Connect
+            </h2>
+
+            <p>
+                I'm open to entry-level opportunities in Data Analytics,
+                Business Intelligence, Data Visualization and related fields.
+            </p>
+
+
+            <div class="buttons">
+
+                <a href="mailto:danielbusivijay@gmail.com"
+                   class="btn btn-light">
+                    Email Me
+                </a>
+
+                <a href="https://linkedin.com/in/vijay-daniel-busi"
+                   target="_blank"
+                   class="btn btn-outline-light">
+                    LinkedIn
+                </a>
+
+                <a href="https://github.com/vijaydaniel-07"
+                   target="_blank"
+                   class="btn btn-outline-light">
+                    GitHub
+                </a>
+
+                <a href="BUSI_VIJAY_DANIEL_Resume.pdf"
+                   download
+                   class="btn btn-light">
+                    Download Resume
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="container footer-content">
+
+            <p>
+                © 2026 Busi Vijay Daniel
+            </p>
+
+            <p>
+                Python • SQL • Power BI • Tableau
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
 </body>
+
 </html>
